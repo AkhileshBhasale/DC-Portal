@@ -1,75 +1,17 @@
-<img alt="Drupal Logo" src="https://www.drupal.org/files/Wordmark_blue_RGB.png" height="60px">
-
-Drupal is an open source content management platform supporting a variety of
-websites ranging from personal weblogs to large community-driven websites. For
-more information, visit the Drupal website, [Drupal.org][Drupal.org], and join
-the [Drupal community][Drupal community].
-
-## Contributing
-
-Drupal is developed on [Drupal.org][Drupal.org], the home of the international
-Drupal community since 2001!
-
-[Drupal.org][Drupal.org] hosts Drupal's [GitLab repository][GitLab repository],
-its [issue queue][issue queue], and its [documentation][documentation]. Before
-you start working on code, be sure to search the [issue queue][issue queue] and
-create an issue if your aren't able to find an existing issue.
-
-Every issue on Drupal.org automatically creates a new community-accessible fork
-that you can contribute to. Learn more about the code contribution process on
-the [Issue forks & merge requests page][issue forks].
-
-## Usage
-
-For a brief introduction, see [USAGE.txt](/core/USAGE.txt). You can also find
-guides, API references, and more by visiting Drupal's [documentation
-page][documentation].
-
-You can quickly extend Drupal's core feature set by installing any of its
-[thousands of free and open source modules][modules]. With Drupal and its
-module ecosystem, you can often build most or all of what your project needs
-before writing a single line of code.
-
-## Changelog
-
-Drupal keeps detailed [change records][changelog]. You can search Drupal's
-changes for a record of every notable breaking change and new feature since
-2011.
-
-## Security
-
-For a list of security announcements, see the [Security advisories
-page][Security advisories] (available as [an RSS feed][security RSS]). This
-page also describes how to subscribe to these announcements via email.
-
-For information about the Drupal security process, or to find out how to report
-a potential security issue to the Drupal security team, see the [Security team
-page][security team].
-
-## Need a helping hand?
-
-Visit the [Support page][support] or browse [over a thousand Drupal
-providers][service providers] offering design, strategy, development, and
-hosting services.
-
-## Legal matters
-
-Know your rights when using Drupal by reading Drupal core's
-[license](/core/LICENSE.txt).
-
-Learn about the [Drupal trademark and logo policy here][trademark].
-
-[Drupal.org]: https://www.drupal.org
-[Drupal community]: https://www.drupal.org/community
-[GitLab repository]: https://git.drupalcode.org/project/drupal
-[issue queue]: https://www.drupal.org/project/issues/drupal
-[issue forks]: https://www.drupal.org/drupalorg/docs/gitlab-integration/issue-forks-merge-requests
-[documentation]: https://www.drupal.org/documentation
-[changelog]: https://www.drupal.org/list-changes/drupal
-[modules]: https://www.drupal.org/project/project_module
-[security advisories]: https://www.drupal.org/security
-[security RSS]: https://www.drupal.org/security/rss.xml
-[security team]: https://www.drupal.org/drupal-security-team
-[service providers]: https://www.drupal.org/drupal-services
-[support]: https://www.drupal.org/support
-[trademark]: https://www.drupal.com/trademark
+Welcome to the Drupal Design Credits Portal Website repository. This repository contains the code to main website. Follow the following installation instructions to get started.
+#Installation : 
+We will first start by installing XAMPP. This is a local webserver that helps us to test our drupal website on our desktop. You may also use another service like Lando (paid) or Hostinger (paid). 
+##XAMPP Installation:
+Visit their [website](https://www.apachefriends.org/index.html) and follow the steps to install XAMPP. 
+Once you are done with installation you can use the panel to start and stop the server and database. XAMPP comes with a MySQL database in-built where you can manage this website's database. Installing XAMPP will allow us to test and see how our website looks in real time. In fact most of our development will be done here.
+##Drupal 
+After installing XAMPP you will have to clone this(the master branch) repository and paste it in the "htdocs" folder insider XAMPP. Then open your browser and go to "localhost/drupal". You will be prompted to do an installation. Then you will have access to the website with administrator priviledges. Keep track of your passwords for XAMPP and Drupal. Having admin access to the website allows you to add content, users and even new features to the website as you please. Keep in mind that you may have to change the name of the "settings.default.php" file to "settings.php".
+##Alternative Installation:
+If you wish to install a fresh Drupal website then you may follow the steps given [here](https://www.drupal.org/docs/develop/local-server-setup/windows-development-environment/quick-install-drupal-with-xampp-on-windows).
+#Some helpful tips:
+1. If you wish to see how the website looks to different users create those users and log with their credentials to see how they will see the website.
+1. You can add pages by creating new views that show content, or simply create new content types, editing their fields, adding content and finally publishing them.
+1. It is also possible to embed basic HTML, CSS and Javascript code into the body of a page to create buttons, links inputs etc. 
+1. You can also use modules to implement newer functionalities, but beware that most modules worked on older versions of drupal and are not being maintained anymore. 
+1. Keep track of user persmissions and make sure the all users are being grated the minimum number of persmissions required to prevent any security issues.
+1. Make use of taxonomy terms properly. Adding taxonomy terms to any content type can help users view and filter content based on taxonomy terms.
